@@ -22,9 +22,9 @@ export const teamMembers: TeamMember[] = [
     links: [
       {
         label: 'LinkedIn',
-        url: 'https://linkedin.com/in/javierTorrebloCortez',
+        url: 'https://linkedin.com/in/javiertorralbocortes',
       },
-      { label: 'Email', url: 'mailto:javier@example.com' },
+      { label: 'Email', url: 'mailto:javiertorralbocortes@gmail.com' },
     ],
   },
   {
@@ -37,9 +37,9 @@ export const teamMembers: TeamMember[] = [
     links: [
       {
         label: 'LinkedIn',
-        url: 'https://linkedin.com/in/alejandoCerezo',
+        url: 'https://linkedin.com/in/alexcerezocontreras',
       },
-      { label: 'Email', url: 'mailto:alejandro@example.com' },
+      { label: 'Email', url: 'mailto:' },
     ],
   },
 ];
