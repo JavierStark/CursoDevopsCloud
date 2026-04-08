@@ -2,9 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ['main']
+    branches: ['master']
   pull_request:
-    branches: ['main']
+    branches: ['master']
 
 jobs:
   build-and-deploy:
@@ -36,12 +36,12 @@ jobs:
         with:
           static_site_generator: next
 
-      - name: Upload artifacts
-        uses: actions/upload-pages-artifact@v4
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
         with:
           path: './out'
 
       - name: Deploy to GitHub Pages
         id: deployment
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         uses: actions/deploy-pages@v3
