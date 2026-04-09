@@ -18,7 +18,7 @@ export const teamMembers: TeamMember[] = [
     year: '3º de Ingeniería Informática',
     profile: 'Estudiante passionate sobre DevOps',
     bio: 'Apasionado por la cultura DevOps, la automatización de procesos y la gestión de infraestructuras. Convencido de que la automatización es la clave para escalar sistemas complejos y reducir errores humanos.',
-    image: '/images/javier-placeholder.jpg',
+    image: '/images/Javier.jpeg',
     links: [
       {
         label: 'LinkedIn',
@@ -33,7 +33,7 @@ export const teamMembers: TeamMember[] = [
     year: '3º de Ingeniería Informática',
     profile: 'Ingeniero Cloud & Kubernetes',
     bio: 'Enfocado en el desarrollo nativo en la nube, arquitecturas distribuidas y orquestación de contenedores. Especializado en construcción de sistemas resilientes y escalables con Kubernetes y AWS.',
-    image: '/images/alejandro-placeholder.jpg',
+    image: '/images/Alex.png',
     links: [
       {
         label: 'LinkedIn',

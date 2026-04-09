@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { TeamMember } from '@/data/team';
 
 interface TeamMemberCardProps {
@@ -7,8 +8,8 @@ interface TeamMemberCardProps {
 export default function TeamMemberCard({ member }: TeamMemberCardProps) {
   return (
     <div className="bg-gray-700/50 border border-gray-600 rounded-lg overflow-hidden hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
-      <div className="w-full h-64 bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
-        <div className="text-4xl">👤</div>
+      <div className="relative w-full h-64 bg-gray-800">
+        <Image src={member.image} alt={member.name} fill className="object-cover" />
       </div>
 
       <div className="p-6">
