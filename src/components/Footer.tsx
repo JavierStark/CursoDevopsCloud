@@ -44,16 +44,6 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>&copy; 2026 Mini-Curso DevOps. Todos los derechos reservados.</p>
-            <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-white transition">Privacidad</a>
-              <a href="#" className="hover:text-white transition">Términos</a>
-              <a href="#" className="hover:text-white transition">Contacto</a>
-            </div>
-          </div>
-        </div>
       </div>
     </footer>
   );

@@ -6,10 +6,17 @@ interface TeamMemberCardProps {
 }
 
 export default function TeamMemberCard({ member }: TeamMemberCardProps) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
   return (
     <div className="bg-gray-700/50 border border-gray-600 rounded-lg overflow-hidden hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
       <div className="relative w-full h-[32rem] bg-gray-800">
-        <Image src={member.image} alt={member.name} fill className="object-cover object-top" />
+        <Image
+          src={`${basePath}${member.image}`}
+          alt={member.name}
+          fill
+          className="object-cover object-top"
+        />
       </div>
 
       <div className="p-6">
