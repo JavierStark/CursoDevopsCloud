@@ -29,19 +29,13 @@ export default function RequirementsSection() {
                 <li className="flex items-start gap-3">
                   <span className="text-purple-400 font-bold flex-shrink-0">→</span>
                   <span className="text-gray-300">
-                    <strong>Editor:</strong> VS Code, IntelliJ IDEA, o similar
+                    <strong>Editor:</strong> VS Code
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-purple-400 font-bold flex-shrink-0">→</span>
                   <span className="text-gray-300">
-                    <strong>Terminal:</strong> Git Bash, PowerShell, o bash nativo
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-purple-400 font-bold flex-shrink-0">→</span>
-                  <span className="text-gray-300">
-                    <strong>RAM mínima:</strong> 8GB recomendados, 4GB mínimo
+                    <strong>Terminal:</strong> Git Bash o bash nativo
                   </span>
                 </li>
               </ul>
