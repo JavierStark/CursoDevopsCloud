@@ -8,18 +8,13 @@ interface TeamMemberCardProps {
 export default function TeamMemberCard({ member }: TeamMemberCardProps) {
   return (
     <div className="bg-gray-700/50 border border-gray-600 rounded-lg overflow-hidden hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
-      <div className="relative w-full h-64 bg-gray-800">
-        <Image src={member.image} alt={member.name} fill className="object-cover" />
+      <div className="relative w-full h-[32rem] bg-gray-800">
+        <Image src={member.image} alt={member.name} fill className="object-cover object-top" />
       </div>
 
       <div className="p-6">
         <h3 className="text-2xl font-bold text-white mb-1">{member.name}</h3>
         <p className="text-sm text-gray-400 mb-4">{member.year}</p>
-
-        <div className="mb-4">
-          <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">Perfil</p>
-          <p className="text-gray-300 font-semibold text-sm">{member.profile}</p>
-        </div>
 
         <p className="text-gray-300 text-sm leading-relaxed mb-6">{member.bio}</p>
 

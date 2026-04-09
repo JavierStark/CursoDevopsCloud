@@ -1,5 +1,6 @@
 // External URLs and Configuration
 export const config = {
+  registrationPath: '/formulario',
   event: {
     title: 'Mini-Curso Práctico de DevOps',
     targetAudience: 'Estudiantes de la E.T.S. de Ingeniería Informática',
@@ -13,7 +14,7 @@ export const config = {
     'Ordenador personal',
     'Conexión a internet',
   ],
-  formUrl: 'https://formspree.io/f/YOUR_FORM_ID', // Replace with actual Formspree ID
+  googleFormEmbedUrl: 'https://docs.google.com/forms/d/e/REPLACE_WITH_YOUR_FORM_ID/viewform?embedded=true',
   github: {
     profileUrl: 'https://github.com',
   },

@@ -1,5 +1,4 @@
 import TechnologyIcons from './TechnologyIcons';
-import ButtonCTA from './ButtonCTA';
 import GuestSpeaker from './GuestSpeaker';
 import { Module } from '@/data/modules';
 
@@ -40,9 +39,12 @@ export default function ModuleCard({ module }: ModuleCardProps) {
           </div>
         )}
 
-        <ButtonCTA href={module.repositoryUrl} variant="secondary" external className="w-full text-sm">
-          Acceso al Repositorio →
-        </ButtonCTA>
+        <span
+          className="inline-block w-full px-6 py-3 rounded font-semibold text-center text-sm bg-gray-800 text-gray-400 border border-gray-700 cursor-not-allowed opacity-80"
+          aria-disabled="true"
+        >
+          Próximamente
+        </span>
       </div>
     </div>
   );
