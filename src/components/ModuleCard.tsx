@@ -9,7 +9,7 @@ interface ModuleCardProps {
 export default function ModuleCard({ module }: ModuleCardProps) {
   return (
     <div className="bg-gray-700/50 border border-gray-600 rounded-lg overflow-hidden hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-4">
+      <div className="bg-blue-600 p-4">
         <div className="flex justify-between items-start">
           <h3 className="text-2xl font-bold text-white">Módulo {module.id}</h3>
           <span className="px-3 py-1 bg-white/20 rounded text-sm text-gray-100">{module.date}</span>

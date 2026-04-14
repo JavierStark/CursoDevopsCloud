@@ -9,6 +9,16 @@ export default function GeneralInfo() {
           <p className="text-gray-400">Detalles clave del evento</p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-10 rounded-2xl border border-blue-500/20 bg-gray-700/40 p-6 text-gray-200 shadow-lg shadow-black/10">
+          <p className="text-base leading-relaxed sm:text-lg">
+            Este curso recorre los pilares de DevOps y Cloud con un enfoque práctico: contenedores,
+            servicios en la nube, orquestación y automatización de despliegues. Cada sesión combina
+            teoría esencial con un taller guiado para aprender haciendo, y además contará con un
+            invitado de la industria que aportará una visión profesional sobre las tecnologías
+            trabajadas en clase.
+          </p>
+        </div>
+
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-gray-700/50 border border-gray-600 rounded-lg p-8">
             <div className="text-3xl mb-4">👥</div>

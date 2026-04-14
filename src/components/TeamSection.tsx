@@ -8,7 +8,7 @@ export default function TeamSection() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-white mb-4">Conoce a los Organizadores</h2>
           <p className="text-gray-400 text-lg">
-            Estudiantes de 3º de Ingeniería Informática comprometidos con compartir conocimiento
+            Estudiantes de la E.T.S.  de Ingeniería Informática comprometidos con compartir conocimiento
           </p>
         </div>
 

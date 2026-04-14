@@ -4,7 +4,7 @@ import { config } from '@/data/config';
 export default function FormularioPage() {
   return (
     <>
-      <section className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-12 px-4">
+      <section className="min-h-screen bg-gray-900 py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
             <h1 className="text-5xl font-bold text-white mb-4">Inscripcion al Evento</h1>

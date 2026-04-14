@@ -31,7 +31,9 @@ export default function TeamMemberCard({ member }: TeamMemberCardProps) {
         <h3 className="text-2xl font-bold text-white mb-1">{member.name}</h3>
         <p className="text-sm text-gray-400 mb-4">{member.year}</p>
 
-        <p className="text-gray-300 text-sm leading-relaxed mb-6">{member.bio}</p>
+        {member.bio.trim().length > 0 && (
+          <p className="text-gray-300 text-sm leading-relaxed mb-6">{member.bio}</p>
+        )}
 
         <div className="flex gap-3">
           {member.links.map((link, index) => (

@@ -9,6 +9,7 @@ export interface Module {
   speakers?: {
     name: string;
     role: string;
+    url?: string;
   }[];
 }
 
@@ -26,6 +27,7 @@ export const modules: Module[] = [
       {
         name: 'Iñaki Respaldiza',
         role: 'Organizador Docker Sevilla',
+        url: 'https://www.linkedin.com/in/irespaldiza/',
       },
     ],
   },
@@ -40,8 +42,9 @@ export const modules: Module[] = [
     repositoryUrl: 'https://github.com/javierTorrebloCortez/modulo-2-aws-localstack',
     speakers: [
       {
-        name: '[Nombres por confirmar]',
+        name: 'AWS User Group Málaga',
         role: 'Organizadores AWS User Group Málaga',
+        url: 'https://www.linkedin.com/company/aws-ug-m%C3%A1laga/',
       },
     ],
   },
@@ -72,8 +75,9 @@ export const modules: Module[] = [
     repositoryUrl: 'https://github.com/javierTorrebloCortez/modulo-4-cicd-terraform',
     speakers: [
       {
-        name: 'Alex Cerezo',
-        role: 'Organizador Github Spain Málaga',
+        name: 'Jorge Hidalgo',
+        role: 'Organizador de OpenSouthCode y MálagaJUG',
+        url: 'https://www.linkedin.com/in/deors/',
       },
     ],
   },

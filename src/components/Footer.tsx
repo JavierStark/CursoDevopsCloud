@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold text-blue-400 mb-2">DevOps</h3>
+            <h3 className="text-2xl font-bold text-blue-400 mb-2">Curso de DevOps y Cloud</h3>
             <p className="text-gray-400 text-sm">
               Mini-curso práctico para estudiantes de Ingeniería Informática
             </p>

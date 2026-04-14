@@ -15,7 +15,7 @@ export const teamMembers: TeamMember[] = [
     id: 1,
     name: 'Javier Torralbo Cortés',
     year: '3º de Ingeniería Informática',
-    bio: 'Apasionado por la cultura DevOps, la automatización de procesos y la gestión de infraestructuras. Convencido de que la automatización es la clave para escalar sistemas complejos y reducir errores humanos.',
+    bio: '',
     image: '/images/Javier.jpeg',
     links: [
       {
@@ -29,7 +29,7 @@ export const teamMembers: TeamMember[] = [
     id: 2,
     name: 'Alejandro Cerezo',
     year: '3º de Ingeniería de Software',
-    bio: 'Enfocado en el desarrollo nativo en la nube, arquitecturas distribuidas y orquestación de contenedores. Especializado en construcción de sistemas resilientes y escalables con Kubernetes y AWS.',
+    bio: '',
     image: '/images/Alex.png',
     links: [
       {
