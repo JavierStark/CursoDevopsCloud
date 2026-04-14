@@ -9,7 +9,7 @@ export default function Navigation() {
           <Link href="/" className="text-xl font-bold text-blue-400">
             Curso de DevOps y Cloud
           </Link>
-
+{/* 
           <div className="hidden md:flex gap-8">
             <Link href="/#program" className="text-gray-300 hover:text-white transition">
               Programa
@@ -20,7 +20,7 @@ export default function Navigation() {
             <Link href="/#team" className="text-gray-300 hover:text-white transition">
               Equipo
             </Link>
-          </div>
+          </div> */}
 
           <Link
             href={config.registrationPath}
