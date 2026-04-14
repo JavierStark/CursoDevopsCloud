@@ -11,7 +11,7 @@ export default function FormularioPage() {
             <p className="text-xl text-gray-300">Completa el formulario oficial de Google para reservar tu plaza.</p>
           </div>
 
-          <div>
+          <div className="bg-white rounded-xl overflow-hidden">
             <iframe
               src={config.googleFormEmbedUrl}
               title="Formulario de inscripcion"
