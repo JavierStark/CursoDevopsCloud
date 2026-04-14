@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { config } from '@/data/config';
 
 export default function Hero() {
@@ -25,12 +26,12 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <a
+              <Link
                 href={config.registrationPath}
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold text-center transition"
               >
                 ¡Inscríbete al Evento! →
-              </a>
+              </Link>
               <a href="#program" className="bg-gray-700 hover:bg-gray-600 text-white px-8 py-3 rounded font-semibold text-center transition border border-gray-600">
                 Ver Programa
               </a>

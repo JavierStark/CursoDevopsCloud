@@ -6,13 +6,21 @@ interface TeamMemberCardProps {
 }
 
 export default function TeamMemberCard({ member }: TeamMemberCardProps) {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+  const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+  const basePath =
+    process.env.NODE_ENV === 'production' && configuredBasePath === ''
+      ? '/CursoDevopsCloud'
+      : configuredBasePath;
+  const imageSrc =
+    member.image.startsWith(basePath) || basePath === ''
+      ? member.image
+      : `${basePath}${member.image}`;
 
   return (
     <div className="bg-gray-700/50 border border-gray-600 rounded-lg overflow-hidden hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
       <div className="relative w-full h-[32rem] bg-gray-800">
         <Image
-          src={`${basePath}${member.image}`}
+          src={imageSrc}
           alt={member.name}
           fill
           className="object-cover object-top"
