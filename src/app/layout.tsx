@@ -1,9 +1,14 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Navigation from '@/components/Navigation';
 
 const inter = Inter({ subsets: ['latin'] });
+
+const repo = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "CursoDevopsCloud";
+const isProd = process.env.NODE_ENV === "production";
+const basePath = isProd ? `/${repo}` : "";
+const siteUrl = isProd ? `https://cursodevoopscloud.github.io${basePath}` : "http://localhost:3000";
 
 export const metadata: Metadata = {
   title: 'Mini-Curso DevOps - ETS Ingeniería Informática',
@@ -15,12 +20,12 @@ export const metadata: Metadata = {
     { name: 'Javier Torralbo Cortés' },
     { name: 'Alejandro Cerezo' },
   ],
-  viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
+  metadataBase: new URL(siteUrl),
   openGraph: {
     type: 'website',
     locale: 'es_ES',
-    url: 'https://cursodevoopscloud.github.io',
+    url: siteUrl,
     title: 'Mini-Curso DevOps - ETS Ingeniería Informática',
     description:
       'Aprende DevOps en 4 sesiones prácticas. Docker, AWS, Kubernetes y CI/CD.',
@@ -33,6 +38,11 @@ export const metadata: Metadata = {
       },
     ],
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({
