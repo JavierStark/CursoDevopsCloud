@@ -44,6 +44,16 @@ jobs:
           NODE_ENV: production
         run: npm run build
 
+      - name: Verify build output
+        run: |
+          if [ -d "out" ]; then
+            echo "✓ Static export folder 'out' found."
+            ls -R out | head -n 20
+          else
+            echo "❌ Error: 'out' folder was not created."
+            exit 1
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
