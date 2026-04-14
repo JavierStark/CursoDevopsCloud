@@ -11,12 +11,11 @@ export default function FormularioPage() {
             <p className="text-xl text-gray-300">Completa el formulario oficial de Google para reservar tu plaza.</p>
           </div>
 
-          <div className="bg-gray-700/50 border border-gray-600 rounded-lg p-3 sm:p-4">
+          <div>
             <iframe
               src={config.googleFormEmbedUrl}
               title="Formulario de inscripcion"
-              className="w-full h-[1100px] rounded"
-              loading="lazy"
+              className="w-full h-[1100px]"
             >
               Cargando formulario...
             </iframe>
