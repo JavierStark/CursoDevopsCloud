@@ -11,7 +11,7 @@ const basePath = isProd ? `/${repo}` : "";
 const siteUrl = isProd ? `https://cursodevoopscloud.github.io${basePath}` : "http://localhost:3000";
 
 export const metadata: Metadata = {
-  title: 'Mini-Curso DevOps - ETS Ingeniería Informática',
+  title: 'Curso DevOps y Cloud - ETS Ingeniería Informática',
   description:
     'Aprende DevOps en 4 sesiones prácticas. Docker, AWS, Kubernetes y CI/CD. Inscríbete ahora para estudiantes de Ingeniería Informática.',
   keywords:
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'es_ES',
     url: siteUrl,
-    title: 'Mini-Curso DevOps - ETS Ingeniería Informática',
+    title: 'Curso DevOps y Cloud - ETS Ingeniería Informática',
     description:
       'Aprende DevOps en 4 sesiones prácticas. Docker, AWS, Kubernetes y CI/CD.',
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Mini-Curso DevOps',
+        alt: 'Curso DevOps y Cloud - ETS Ingeniería Informática',
       },
     ],
   },
