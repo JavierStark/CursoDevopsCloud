@@ -61,6 +61,7 @@ export const modules: Module[] = [
       {
         name: '[Nombres por confirmar]',
         role: 'Miembros CNCF Málaga',
+        url: 'https://community.cncf.io/cloud-native-malaga/'
       },
     ],
   },

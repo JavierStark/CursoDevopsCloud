@@ -3,6 +3,17 @@ import Image from 'next/image';
 import { config } from '@/data/config';
 
 export default function Hero() {
+  const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+  const basePath =
+    process.env.NODE_ENV === 'production' && configuredBasePath === ''
+      ? '/CursoDevopsCloud'
+      : configuredBasePath;
+  const posterImage = '/images/Cartel.png';
+  const posterSrc =
+    posterImage.startsWith(basePath) || basePath === ''
+      ? posterImage
+      : `${basePath}${posterImage}`;
+
   return (
     <section className="min-h-screen bg-gray-900 flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -10,7 +21,7 @@ export default function Hero() {
           <div className="flex justify-center">
             <div className="w-full max-w-md rounded-lg shadow-2xl overflow-hidden">
               <Image
-                src="/images/Cartel.png"
+                src={posterSrc}
                 alt="Cartel del Curso de DevOps y Cloud"
                 width={800}
                 height={800}
