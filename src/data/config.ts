@@ -14,7 +14,7 @@ export const config = {
     'Ordenador personal',
     'Conexión a internet',
   ],
-  googleFormEmbedUrl: 'https://docs.google.com/forms/d/e/REPLACE_WITH_YOUR_FORM_ID/viewform?embedded=true',
+  googleFormEmbedUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdWDsUml3bfhwQ_HBpmvJMmV9IqiC-52CPBdN_MTQEZMtfUrQ/viewform?embedded=true',
   github: {
     profileUrl: 'https://github.com',
   },
