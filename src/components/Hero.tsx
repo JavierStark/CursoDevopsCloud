@@ -9,7 +9,9 @@ export default function Hero() {
           <div className="flex justify-center">
             <div className="w-full max-w-md aspect-square bg-blue-600 rounded-lg shadow-2xl flex items-center justify-center">
               <div className="text-center">
-                <h3 className="text-white text-2xl font-bold mb-2">🚀 Curso de DevOps y Cloud</h3>
+                <h3 className="text-white text-2xl font-bold mb-2">
+                  🚀 Curso de <span className="text-blue-400">DevOps y Cloud</span>
+                </h3>
                 <p className="text-gray-100 text-sm">Imagen Promocional del Evento</p>
               </div>
             </div>
@@ -17,7 +19,7 @@ export default function Hero() {
 
           <div>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Curso de DevOps y Cloud en 4 sesiones prácticas
+              Curso de <span className="text-blue-400">DevOps y Cloud</span> en 4 sesiones prácticas
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">

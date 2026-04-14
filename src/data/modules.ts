@@ -33,7 +33,7 @@ export const modules: Module[] = [
   },
   {
     id: 2,
-    title: 'Cloud Computing Local con AWS',
+    title: 'Cloud Computing con AWS',
     date: 'Miércoles 29 de abril',
     duration: '2 horas',
     description:
