@@ -54,6 +54,9 @@ jobs:
             exit 1
           fi
 
+      - name: Disable Jekyll processing
+        run: touch out/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
