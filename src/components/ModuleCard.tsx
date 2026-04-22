@@ -39,12 +39,14 @@ export default function ModuleCard({ module }: ModuleCardProps) {
           </div>
         )}
 
-        <span
-          className="inline-block w-full px-6 py-3 rounded font-semibold text-center text-sm bg-gray-800 text-gray-400 border border-gray-700 cursor-not-allowed opacity-80"
-          aria-disabled="true"
+        <a
+          href={module.repositoryUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-block w-full px-6 py-3 rounded font-semibold text-center text-sm bg-gray-800 text-white border border-gray-700 hover:border-blue-500 hover:bg-blue-600 transition-colors"
         >
-          Próximamente
-        </span>
+          Repositorio
+        </a>
       </div>
     </div>
   );
