@@ -7,6 +7,8 @@ interface ModuleCardProps {
 }
 
 export default function ModuleCard({ module }: ModuleCardProps) {
+  const isDockerModule = module.id === 1;
+
   return (
     <div className="bg-gray-700/50 border border-gray-600 rounded-lg overflow-hidden hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
       <div className="bg-blue-600 p-4">
@@ -39,14 +41,23 @@ export default function ModuleCard({ module }: ModuleCardProps) {
           </div>
         )}
 
-        <a
-          href={module.repositoryUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-block w-full px-6 py-3 rounded font-semibold text-center text-sm bg-gray-800 text-white border border-gray-700 hover:border-blue-500 hover:bg-blue-600 transition-colors"
-        >
-          Repositorio
-        </a>
+        {isDockerModule ? (
+          <a
+            href={module.repositoryUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block w-full px-6 py-3 rounded font-semibold text-center text-sm bg-blue-600 text-white border border-blue-400 hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
+          >
+            Repositorio
+          </a>
+        ) : (
+          <span
+            className="inline-block w-full px-6 py-3 rounded font-semibold text-center text-sm bg-gray-800 text-gray-400 border border-gray-700 cursor-not-allowed opacity-80"
+            aria-disabled="true"
+          >
+            Proximamente
+          </span>
+        )}
       </div>
     </div>
   );
