@@ -6,6 +6,7 @@ export interface Module {
   description: string;
   technologies: string[];
   repositoryUrl: string;
+  workshopUrl?: string;
   speakers?: {
     name: string;
     role: string;
@@ -40,6 +41,7 @@ export const modules: Module[] = [
       'En este bloque exploraremos de manera directa el ecosistema de Amazon Web Services (AWS), centrándonos en los servicios que forman la columna vertebral de la infraestructura en la nube actual. El taller se enfocará en la interacción con servicios esenciales de almacenamiento de objetos mediante S3 y en la gestión de bases de datos tanto relacionales (RDS) como NoSQL (DynamoDB). Se profundizará en la arquitectura "Serverless" mediante el despliegue y configuración de funciones Lambda a través de la interfaz de línea de comandos (CLI), permitiendo una comprensión real de la ejecución de código bajo demanda. De forma opcional, y en función del ritmo del grupo, introduciremos el uso de colas de mensajería con SQS para comprender la comunicación asíncrona en arquitecturas distribuidas modernas.',
     technologies: ['AWS', 'S3', 'RDS', 'DynamoDB', 'Lambda', 'SQS'],
     repositoryUrl: 'https://github.com/javierTorrebloCortez/modulo-2-aws-localstack',
+    workshopUrl: 'https://catalog.us-east-1.prod.workshops.aws/join?access-code=efc5-059361-59',
     speakers: [
       {
         name: 'AWS User Group Málaga',
