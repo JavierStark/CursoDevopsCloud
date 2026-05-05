@@ -7,7 +7,7 @@ interface ModuleCardProps {
 }
 
 export default function ModuleCard({ module }: ModuleCardProps) {
-  const isDockerModule = module.id === 1;
+  const isRepositoryModule = module.id === 3;
 
   return (
     <div className="bg-gray-700/50 border border-gray-600 rounded-lg overflow-hidden hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
@@ -41,7 +41,7 @@ export default function ModuleCard({ module }: ModuleCardProps) {
           </div>
         )}
 
-        {isDockerModule ? (
+        {isRepositoryModule ? (
           <a
             href={module.repositoryUrl}
             target="_blank"

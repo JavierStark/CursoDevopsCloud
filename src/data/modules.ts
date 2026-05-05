@@ -56,12 +56,17 @@ export const modules: Module[] = [
     description:
       'El tercer taller eleva la complejidad hacia la gestión de contenedores a gran escala mediante el ecosistema de Kubernetes. Tras explicar los conceptos fundamentales de la arquitectura, como Pods, Deployments y Services, nos enfocaremos plenamente en el dominio de la herramienta kubectl para la administración del cluster. La formación tendrá un enfoque eminentemente diagnóstico: plantearemos retos basados en problemas reales mediante archivos de configuración YAML con errores que los alumnos deberán identificar y corregir. A través de este proceso práctico, aprenderán a realizar tareas de depuración, análisis de logs y conexión de servicios internos, desarrollando así competencias críticas para el despliegue y mantenimiento de infraestructuras complejas.',
     technologies: ['Kubernetes', 'kubectl', 'YAML', 'Pods', 'Deployments', 'Services'],
-    repositoryUrl: 'https://github.com/javierTorrebloCortez/modulo-3-kubernetes',
+    repositoryUrl: 'https://github.com/JavierStark/CursoDevOpsCloud_Kubernetes',
     speakers: [
       {
-        name: '[Nombres por confirmar]',
-        role: 'Miembros CNCF Málaga',
-        url: 'https://community.cncf.io/cloud-native-malaga/'
+        name: 'Juan Manuel Vera',
+        role: 'Organizador CNCF Málaga',
+        url: 'https://www.linkedin.com/in/juanmanuelvera/'
+      },
+      {
+        name: 'Abel Alejandro Nieva',
+        role: 'Organizador CNCF Málaga',
+        url: 'https://www.linkedin.com/in/abelnieva/'
       },
     ],
   },
