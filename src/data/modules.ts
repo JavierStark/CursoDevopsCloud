@@ -5,7 +5,7 @@ export interface Module {
   duration: string;
   description: string;
   technologies: string[];
-  url: string;
+  url?: string;
   speakers?: {
     name: string;
     role: string;
@@ -78,7 +78,6 @@ export const modules: Module[] = [
     description:
       'La sesión final integra todos los conocimientos previos en un flujo de trabajo automatizado. Definiremos los conceptos de Integración Continua (CI) y Despliegue Continuo (CD) utilizando GitHub Actions como motor principal. Los alumnos configurarán pipelines para ejecutar tests automáticos ante cada "push" y realizar despliegues en GitHub Pages. Como novedad fundamental, introduciremos ligeramente el concepto de Infraestructura como Código (IaC) mediante Terraform, mostrando cómo se puede automatizar el aprovisionamiento de recursos. Finalizaremos con una comparativa sobre cómo este flujo local se trasladaría al despliegue automático en la nube.',
     technologies: ['GitHub Actions', 'Terraform', 'CI/CD', 'GitHub Pages'],
-    url: 'https://github.com/javierTorrebloCortez/modulo-4-cicd-terraform',
     speakers: [
       {
         name: 'Jorge Hidalgo',
