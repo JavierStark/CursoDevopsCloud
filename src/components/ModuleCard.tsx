@@ -8,6 +8,7 @@ interface ModuleCardProps {
 
 export default function ModuleCard({ module }: ModuleCardProps) {
   const isRepositoryModule = module.id === 3;
+  const activeUrl = module.id === 1 ? module.repositoryUrl : module.workshopUrl;
 
   return (
     <div className="bg-gray-700/50 border border-gray-600 rounded-lg overflow-hidden hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
@@ -41,14 +42,14 @@ export default function ModuleCard({ module }: ModuleCardProps) {
           </div>
         )}
 
-        {isRepositoryModule ? (
+        {activeUrl ? (
           <a
-            href={module.repositoryUrl}
+            href={activeUrl}
             target="_blank"
             rel="noreferrer"
             className="inline-block w-full px-6 py-3 rounded font-semibold text-center text-sm bg-blue-600 text-white border border-blue-400 hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
           >
-            Repositorio
+            {module.id === 1 ? 'Repositorio' : 'Acceder al Taller'}
           </a>
         ) : (
           <span
