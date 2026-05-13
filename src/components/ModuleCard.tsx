@@ -7,8 +7,6 @@ interface ModuleCardProps {
 }
 
 export default function ModuleCard({ module }: ModuleCardProps) {
-  const isRepositoryModule = module.id === 3;
-
   return (
     <div className="bg-gray-700/50 border border-gray-600 rounded-lg overflow-hidden hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
       <div className="bg-blue-600 p-4">
@@ -41,7 +39,21 @@ export default function ModuleCard({ module }: ModuleCardProps) {
           </div>
         )}
 
-        {module.url ? (
+        {module.resources && module.resources.length > 0 ? (
+          <div className="flex flex-col gap-3">
+            {module.resources.map((resource) => (
+              <a
+                key={resource.url}
+                href={resource.url}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-block w-full px-6 py-3 rounded font-semibold text-center text-sm bg-blue-600 text-white border border-blue-400 hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
+              >
+                {resource.label}
+              </a>
+            ))}
+          </div>
+        ) : module.url ? (
           <a
             href={module.url}
             target="_blank"
